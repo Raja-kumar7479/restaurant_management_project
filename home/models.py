@@ -1,11 +1,9 @@
 from django.db import models
-
-# Create your models here.
-class MenuCategory(models.Model):
-    name = models.CharField(max_length=100. unique =True)
+classnMenuCategory(models.Model):
+    name = models.CharField(max_length=100,unique=True)
     class Meta:
-        verbose_name ="Menu Category"
-        verbose_name_plural ="Menu categories"
-        odering =["name"]
+        verbaose_name = "Menu_Category"
+        verbaose_name_plural ="Menu_category"
+        ordering =["name"]
     def __str__(self):
         return self.name
